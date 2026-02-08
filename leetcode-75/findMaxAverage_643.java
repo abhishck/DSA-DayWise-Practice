@@ -8,13 +8,13 @@ public class findMaxAverage_643{
         for(high=0;high<k;high++){
             sum+=nums[high];
         }
-        res=Math.max(res,sum/k);
+        // res=Math.max(res,sum/k);
         while(high<n){
+            res=Math.max(res,sum/k);
             sum-=nums[low];
             low++;
             sum+=nums[high];
             high++;
-            res=Math.max(res,sum/k);
         }
         return res;
     }
