@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class TwoSum{
+   
     public int[] twoSum(int[] nums, int target){
         int n=nums.length;
         HashMap<Integer,Integer> map=new HashMap<>();
