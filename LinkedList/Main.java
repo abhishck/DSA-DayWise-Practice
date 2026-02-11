@@ -10,6 +10,9 @@ public class Main{
         linkedlist.insertFirst(6);
         linkedlist.insertFirst(7);
         linkedlist.insertLast(70);
+        System.out.println(linkedlist.deleteFirst());
+        System.out.println(linkedlist.deleteLast());
+        
         linkedlist.display();
     }
 }
