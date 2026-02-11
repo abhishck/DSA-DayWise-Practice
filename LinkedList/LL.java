@@ -96,6 +96,30 @@ public class LL {
         return value;
     }
 
+    public Node find(int value){
+        Node node=head;
+        while(node != null){
+            if(node.val==value){
+                return node;
+            }
+            node=node.next;
+        }
+        return null;
+    }
+
+    public int delete(int index){
+        if(index==0){
+            return deleteFirst();
+        }
+        if(index==size){
+            return deleteLast();
+        }
+        Node prevNode=getNode(index-1);
+        int value=prevNode.next.val;
+        prevNode.next=prevNode.next.next;
+        return value;
+    }
+
 
     public void display() {
         Node temp = head;
