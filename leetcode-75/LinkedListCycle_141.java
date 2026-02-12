@@ -1,16 +1,16 @@
-// import leetcode-75.LinkedListCycle_141.ListNode;
+ // import leetcode-75.LinkedListCycle_141.ListNode;
 
-public class LinkedListCycle_141{
-    public boolean hasCycle(ListNode head) {
-        ListNode slow = head;
-        ListNode fast = head;
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
-            if(slow==fast){
-                return true;
-            }
-        }
-        return false;
-    }
-}
+// public class LinkedListCycle_141{
+//     public boolean hasCycle(ListNode head) {
+//         ListNode slow = head;
+//         ListNode fast = head;
+//         while (fast != null && fast.next != null) {
+//             slow = slow.next;
+//             fast = fast.next.next;
+//             if(slow==fast){
+//                 return true;
+//             }
+//         }
+//         return false;
+//     }
+// }
