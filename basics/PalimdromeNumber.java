@@ -19,5 +19,6 @@ public class PalimdromeNumber {
         System.out.print("Enter the number :");
        num= sc.nextInt();
       System.out.println(checkPalimdrome(num));
+      sc.close();
     }
 }

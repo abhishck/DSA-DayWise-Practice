@@ -17,5 +17,6 @@ public class CheckEvenOrOdd {
        }else{
         System.out.println(num + " is an odd number");
        }
+       sc.close();
     }
 }
