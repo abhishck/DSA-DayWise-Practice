@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class ContinuousSubarraySum_523{
     public static boolean checkSubarraySum(int[] nums, int k) {
         int n = nums.length;
