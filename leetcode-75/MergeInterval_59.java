@@ -30,7 +30,7 @@ public class MergeInterval_59 {
          int[][] res=new int[list.size()][2];
          for(int i=0;i<list.size();i++){
             res[i][0]=list.get(i).get(0);
-            res[i][1]=list.get(i).get(1)
+            res[i][1]=list.get(i).get(1);
          }
          return res;
      }
