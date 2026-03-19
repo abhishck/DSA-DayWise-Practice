@@ -8,15 +8,17 @@ public class NextGreaterII_503 {
         for(int i=n-1;i>=0;i--){
             st.push(nums[i]);
         }
-        for(int i=n-1;i>=0;i++){
+        for(int i=n-1;i>=0;i--){
             while(!st.empty() && st.peek() <= nums[i]){
                 st.pop();
             }
             if(st.empty()){
                 res[i]=-1;
             }else{
-                res[i]=
+                res[i]=st.peek();
             }
+            st.push(nums[i]);
         }
+        return res;
     }
 }
