@@ -18,6 +18,7 @@ public class NextGreaterI_496 {
             }else{
                 map.put(nums2[i],st.peek());
             }
+            st.push(nums2[i]);
         }
         int res[] = new int[m];
         for(int i=0;i<m;i++){
