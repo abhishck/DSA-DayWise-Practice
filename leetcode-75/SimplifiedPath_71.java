@@ -9,7 +9,7 @@ public class SimplifiedPath_71{
             if(!st.empty() && i.equals("..")){
                 st.pop();
             }
-            else if(!i.equals("") && i.equals(".") && i.equals("..")){
+            else if(!i.equals("") && !i.equals(".") && !i.equals("..")){
                 st.push(i);
             }
         }
